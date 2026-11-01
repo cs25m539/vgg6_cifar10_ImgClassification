@@ -1,0 +1,252 @@
+2026-10-30 20:11:06 | INFO     | vgg6 | ========================================================================================
+2026-10-30 20:11:06 | INFO     | vgg6 | PROJECT START | group=verify-best seed=42 output_dir=/content/CS25M539_Assignment1/assessment_results/best_config_rerun
+2026-10-30 20:11:06 | INFO     | vgg6 | Arguments: {'group': 'verify-best', 'epochs': 20, 'batch_size': 64, 'learning_rate': 0.001, 'activation': 'relu', 'optimizer': 'adam', 'data_dir': '/content/CS25M539_Assignment1/data', 'output_dir': '/content/CS25M539_Assignment1/assessment_results/best_config_rerun', 'seed': 42, 'num_workers': 2, 'summary_csv': '/content/CS25M539_Assignment1/assessment_results/all/experiment_summary.csv', 'wandb': False, 'wandb_project': 'vgg6-cifar10'}
+2026-10-30 20:11:06 | INFO     | vgg6.experiments | BEST-CONFIG READ START | summary_csv=/content/CS25M539_Assignment1/assessment_results/all/experiment_summary.csv
+2026-10-30 20:11:06 | INFO     | vgg6.experiments | BEST-CONFIG SELECTED | source_run=epochs_30 best_val_accuracy=81.8000
+2026-10-30 20:11:06 | INFO     | vgg6 | BEST-CONFIG SELECTION | criterion=maximum best_val_accuracy
+2026-10-30 20:11:06 | INFO     | vgg6 | Selected source row:
+run                                                          epochs_30
+group                                                           epochs
+activation                                                        relu
+optimizer                                                         adam
+batch_size                                                          64
+learning_rate                                                    0.001
+epochs                                                              30
+seed                                                                42
+best_epoch                                                          30
+best_val_accuracy                                                 81.8
+test_loss                                                     0.555288
+test_accuracy                                                    81.81
+minutes                                                       9.425522
+checkpoint           /content/CS25M539_Assignment1/assessment_resul...
+2026-10-30 20:11:06 | INFO     | vgg6 | Verification configuration: {'run': 'verify_epochs_30', 'group': 'verification', 'activation': 'relu', 'optimizer': 'adam', 'batch_size': 64, 'learning_rate': 0.001, 'epochs': 30}
+2026-10-30 20:11:06 | INFO     | vgg6 | SETUP COMPLETE | device=cuda seed=42 experiment_count=1
+2026-10-30 20:11:06 | INFO     | vgg6 | EXPERIMENT QUEUED | index=1/1 run=verify_epochs_30 config={'run': 'verify_epochs_30', 'group': 'verification', 'activation': 'relu', 'optimizer': 'adam', 'batch_size': 64, 'learning_rate': 0.001, 'epochs': 30}
+2026-10-30 20:11:06 | INFO     | vgg6.engine | RUN START | run=verify_epochs_30 group=verification activation=relu optimizer=adam batch_size=64 learning_rate=0.001 epochs=30 seed=42 device=cuda
+2026-10-30 20:11:06 | INFO     | vgg6.engine | STAGE START | run=verify_epochs_30 stage=seed_and_reproducibility
+2026-10-30 20:11:06 | INFO     | vgg6.reproducibility | REPRODUCIBILITY CONFIGURED | seed=42 deterministic=True cuda_available=True
+2026-10-30 20:11:06 | INFO     | vgg6.engine | STAGE COMPLETE | run=verify_epochs_30 stage=seed_and_reproducibility seed=42
+2026-10-30 20:11:06 | INFO     | vgg6.engine | STAGE START | run=verify_epochs_30 stage=data_loading
+2026-10-30 20:11:06 | INFO     | vgg6.data | DATASET STAGE START | data_dir=/content/CS25M539_Assignment1/data batch_size=64 seed=42 workers=2
+2026-10-30 20:11:09 | INFO     | vgg6.data | DATASETS READY | train_pool=50000 validation_pool=50000 test=10000
+2026-10-30 20:11:09 | INFO     | vgg6.data | DATASET STAGE COMPLETE | train_examples=45000 validation_examples=5000 test_examples=10000 train_batches=704 validation_batches=79 test_batches=157 elapsed_sec=2.41
+2026-10-30 20:11:09 | INFO     | vgg6.engine | STAGE COMPLETE | run=verify_epochs_30 stage=data_loading train_batches=704 val_batches=79 test_batches=157 elapsed_sec=2.41
+2026-10-30 20:11:09 | INFO     | vgg6.engine | STAGE START | run=verify_epochs_30 stage=model_and_optimizer_setup
+2026-10-30 20:11:09 | INFO     | vgg6.model | MODEL CREATED | architecture=VGG6 activation=relu parameters=261834 classes=10
+2026-10-30 20:11:09 | INFO     | vgg6.model | OPTIMIZER CREATED | name=adam learning_rate=0.001
+2026-10-30 20:11:09 | INFO     | vgg6.engine | STAGE COMPLETE | run=verify_epochs_30 stage=model_and_optimizer_setup parameters=261834
+2026-10-30 20:11:09 | INFO     | vgg6.engine | STAGE START | run=verify_epochs_30 stage=train_validate requested_epochs=30 checkpoint=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:11:09 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=1/30
+2026-10-30 20:11:09 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=1 phase=training
+2026-10-30 20:11:27 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=1 phase=training loss=1.5418 accuracy=43.95%
+2026-10-30 20:11:27 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=1 phase=validation
+2026-10-30 20:11:28 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=1 phase=validation loss=1.6018 accuracy=45.72%
+2026-10-30 20:11:28 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=1/30 train_loss=1.5418 train_accuracy=43.95% val_loss=1.6018 val_accuracy=45.72% best_val_accuracy_before=-1.00% elapsed_sec=19.00
+2026-10-30 20:11:28 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=1 best_val_accuracy=45.72% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:11:28 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=2/30
+2026-10-30 20:11:28 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=2 phase=training
+2026-10-30 20:11:45 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=2 phase=training loss=1.2500 accuracy=55.56%
+2026-10-30 20:11:45 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=2 phase=validation
+2026-10-30 20:11:46 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=2 phase=validation loss=1.2588 accuracy=58.38%
+2026-10-30 20:11:46 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=2/30 train_loss=1.2500 train_accuracy=55.56% val_loss=1.2588 val_accuracy=58.38% best_val_accuracy_before=45.72% elapsed_sec=18.30
+2026-10-30 20:11:46 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=2 best_val_accuracy=58.38% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:11:46 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=3/30
+2026-10-30 20:11:46 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=3 phase=training
+2026-10-30 20:12:03 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=3 phase=training loss=1.1225 accuracy=60.45%
+2026-10-30 20:12:03 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=3 phase=validation
+2026-10-30 20:12:05 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=3 phase=validation loss=1.0535 accuracy=62.24%
+2026-10-30 20:12:05 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=3/30 train_loss=1.1225 train_accuracy=60.45% val_loss=1.0535 val_accuracy=62.24% best_val_accuracy_before=58.38% elapsed_sec=18.11
+2026-10-30 20:12:05 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=3 best_val_accuracy=62.24% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:12:05 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=4/30
+2026-10-30 20:12:05 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=4 phase=training
+2026-10-30 20:12:22 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=4 phase=training loss=1.0404 accuracy=63.46%
+2026-10-30 20:12:22 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=4 phase=validation
+2026-10-30 20:12:23 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=4 phase=validation loss=1.0738 accuracy=63.30%
+2026-10-30 20:12:23 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=4/30 train_loss=1.0404 train_accuracy=63.46% val_loss=1.0738 val_accuracy=63.30% best_val_accuracy_before=62.24% elapsed_sec=18.33
+2026-10-30 20:12:23 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=4 best_val_accuracy=63.30% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:12:23 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=5/30
+2026-10-30 20:12:23 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=5 phase=training
+2026-10-30 20:12:40 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=5 phase=training loss=0.9773 accuracy=65.81%
+2026-10-30 20:12:40 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=5 phase=validation
+2026-10-30 20:12:41 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=5 phase=validation loss=1.1042 accuracy=62.58%
+2026-10-30 20:12:41 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=5/30 train_loss=0.9773 train_accuracy=65.81% val_loss=1.1042 val_accuracy=62.58% best_val_accuracy_before=63.30% elapsed_sec=18.21
+2026-10-30 20:12:41 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=6/30
+2026-10-30 20:12:41 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=6 phase=training
+2026-10-30 20:12:58 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=6 phase=training loss=0.9257 accuracy=67.42%
+2026-10-30 20:12:58 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=6 phase=validation
+2026-10-30 20:12:59 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=6 phase=validation loss=0.9455 accuracy=68.14%
+2026-10-30 20:12:59 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=6/30 train_loss=0.9257 train_accuracy=67.42% val_loss=0.9455 val_accuracy=68.14% best_val_accuracy_before=63.30% elapsed_sec=18.37
+2026-10-30 20:12:59 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=6 best_val_accuracy=68.14% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:12:59 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=7/30
+2026-10-30 20:12:59 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=7 phase=training
+2026-10-30 20:13:16 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=7 phase=training loss=0.8868 accuracy=69.13%
+2026-10-30 20:13:16 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=7 phase=validation
+2026-10-30 20:13:18 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=7 phase=validation loss=1.2261 accuracy=61.68%
+2026-10-30 20:13:18 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=7/30 train_loss=0.8868 train_accuracy=69.13% val_loss=1.2261 val_accuracy=61.68% best_val_accuracy_before=68.14% elapsed_sec=18.17
+2026-10-30 20:13:18 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=8/30
+2026-10-30 20:13:18 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=8 phase=training
+2026-10-30 20:13:35 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=8 phase=training loss=0.8546 accuracy=70.21%
+2026-10-30 20:13:35 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=8 phase=validation
+2026-10-30 20:13:36 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=8 phase=validation loss=0.9683 accuracy=68.52%
+2026-10-30 20:13:36 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=8/30 train_loss=0.8546 train_accuracy=70.21% val_loss=0.9683 val_accuracy=68.52% best_val_accuracy_before=68.14% elapsed_sec=18.21
+2026-10-30 20:13:36 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=8 best_val_accuracy=68.52% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:13:36 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=9/30
+2026-10-30 20:13:36 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=9 phase=training
+2026-10-30 20:13:53 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=9 phase=training loss=0.8253 accuracy=70.98%
+2026-10-30 20:13:53 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=9 phase=validation
+2026-10-30 20:13:54 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=9 phase=validation loss=0.8509 accuracy=72.28%
+2026-10-30 20:13:54 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=9/30 train_loss=0.8253 train_accuracy=70.98% val_loss=0.8509 val_accuracy=72.28% best_val_accuracy_before=68.52% elapsed_sec=18.14
+2026-10-30 20:13:54 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=9 best_val_accuracy=72.28% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:13:54 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=10/30
+2026-10-30 20:13:54 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=10 phase=training
+2026-10-30 20:14:11 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=10 phase=training loss=0.8050 accuracy=72.04%
+2026-10-30 20:14:11 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=10 phase=validation
+2026-10-30 20:14:12 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=10 phase=validation loss=0.8255 accuracy=72.22%
+2026-10-30 20:14:12 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=10/30 train_loss=0.8050 train_accuracy=72.04% val_loss=0.8255 val_accuracy=72.22% best_val_accuracy_before=72.28% elapsed_sec=18.39
+2026-10-30 20:14:12 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=11/30
+2026-10-30 20:14:12 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=11 phase=training
+2026-10-30 20:14:29 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=11 phase=training loss=0.7799 accuracy=72.99%
+2026-10-30 20:14:29 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=11 phase=validation
+2026-10-30 20:14:31 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=11 phase=validation loss=0.7909 accuracy=73.86%
+2026-10-30 20:14:31 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=11/30 train_loss=0.7799 train_accuracy=72.99% val_loss=0.7909 val_accuracy=73.86% best_val_accuracy_before=72.28% elapsed_sec=18.22
+2026-10-30 20:14:31 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=11 best_val_accuracy=73.86% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:14:31 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=12/30
+2026-10-30 20:14:31 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=12 phase=training
+2026-10-30 20:14:47 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=12 phase=training loss=0.7614 accuracy=73.41%
+2026-10-30 20:14:47 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=12 phase=validation
+2026-10-30 20:14:49 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=12 phase=validation loss=0.7319 accuracy=75.60%
+2026-10-30 20:14:49 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=12/30 train_loss=0.7614 train_accuracy=73.41% val_loss=0.7319 val_accuracy=75.60% best_val_accuracy_before=73.86% elapsed_sec=18.08
+2026-10-30 20:14:49 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=12 best_val_accuracy=75.60% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:14:49 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=13/30
+2026-10-30 20:14:49 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=13 phase=training
+2026-10-30 20:15:06 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=13 phase=training loss=0.7468 accuracy=73.94%
+2026-10-30 20:15:06 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=13 phase=validation
+2026-10-30 20:15:07 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=13 phase=validation loss=0.6983 accuracy=75.74%
+2026-10-30 20:15:07 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=13/30 train_loss=0.7468 train_accuracy=73.94% val_loss=0.6983 val_accuracy=75.74% best_val_accuracy_before=75.60% elapsed_sec=18.08
+2026-10-30 20:15:07 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=13 best_val_accuracy=75.74% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:15:07 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=14/30
+2026-10-30 20:15:07 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=14 phase=training
+2026-10-30 20:15:24 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=14 phase=training loss=0.7299 accuracy=74.62%
+2026-10-30 20:15:24 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=14 phase=validation
+2026-10-30 20:15:25 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=14 phase=validation loss=0.7096 accuracy=76.26%
+2026-10-30 20:15:25 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=14/30 train_loss=0.7299 train_accuracy=74.62% val_loss=0.7096 val_accuracy=76.26% best_val_accuracy_before=75.74% elapsed_sec=18.10
+2026-10-30 20:15:25 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=14 best_val_accuracy=76.26% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:15:25 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=15/30
+2026-10-30 20:15:25 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=15 phase=training
+2026-10-30 20:15:42 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=15 phase=training loss=0.7107 accuracy=75.32%
+2026-10-30 20:15:42 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=15 phase=validation
+2026-10-30 20:15:43 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=15 phase=validation loss=0.7353 accuracy=76.72%
+2026-10-30 20:15:43 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=15/30 train_loss=0.7107 train_accuracy=75.32% val_loss=0.7353 val_accuracy=76.72% best_val_accuracy_before=76.26% elapsed_sec=18.20
+2026-10-30 20:15:43 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=15 best_val_accuracy=76.72% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:15:43 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=16/30
+2026-10-30 20:15:43 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=16 phase=training
+2026-10-30 20:16:00 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=16 phase=training loss=0.7008 accuracy=75.86%
+2026-10-30 20:16:00 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=16 phase=validation
+2026-10-30 20:16:01 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=16 phase=validation loss=0.6893 accuracy=76.80%
+2026-10-30 20:16:01 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=16/30 train_loss=0.7008 train_accuracy=75.86% val_loss=0.6893 val_accuracy=76.80% best_val_accuracy_before=76.72% elapsed_sec=18.11
+2026-10-30 20:16:01 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=16 best_val_accuracy=76.80% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:16:01 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=17/30
+2026-10-30 20:16:01 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=17 phase=training
+2026-10-30 20:16:18 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=17 phase=training loss=0.6883 accuracy=76.30%
+2026-10-30 20:16:18 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=17 phase=validation
+2026-10-30 20:16:19 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=17 phase=validation loss=0.7461 accuracy=75.86%
+2026-10-30 20:16:19 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=17/30 train_loss=0.6883 train_accuracy=76.30% val_loss=0.7461 val_accuracy=75.86% best_val_accuracy_before=76.80% elapsed_sec=18.27
+2026-10-30 20:16:19 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=18/30
+2026-10-30 20:16:19 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=18 phase=training
+2026-10-30 20:16:37 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=18 phase=training loss=0.6786 accuracy=76.32%
+2026-10-30 20:16:37 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=18 phase=validation
+2026-10-30 20:16:38 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=18 phase=validation loss=0.6461 accuracy=78.00%
+2026-10-30 20:16:38 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=18/30 train_loss=0.6786 train_accuracy=76.32% val_loss=0.6461 val_accuracy=78.00% best_val_accuracy_before=76.80% elapsed_sec=18.33
+2026-10-30 20:16:38 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=18 best_val_accuracy=78.00% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:16:38 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=19/30
+2026-10-30 20:16:38 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=19 phase=training
+2026-10-30 20:16:55 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=19 phase=training loss=0.6614 accuracy=77.10%
+2026-10-30 20:16:55 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=19 phase=validation
+2026-10-30 20:16:56 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=19 phase=validation loss=0.7041 accuracy=76.80%
+2026-10-30 20:16:56 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=19/30 train_loss=0.6614 train_accuracy=77.10% val_loss=0.7041 val_accuracy=76.80% best_val_accuracy_before=78.00% elapsed_sec=18.07
+2026-10-30 20:16:56 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=20/30
+2026-10-30 20:16:56 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=20 phase=training
+2026-10-30 20:17:13 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=20 phase=training loss=0.6460 accuracy=77.66%
+2026-10-30 20:17:13 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=20 phase=validation
+2026-10-30 20:17:14 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=20 phase=validation loss=0.6057 accuracy=79.78%
+2026-10-30 20:17:14 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=20/30 train_loss=0.6460 train_accuracy=77.66% val_loss=0.6057 val_accuracy=79.78% best_val_accuracy_before=78.00% elapsed_sec=18.30
+2026-10-30 20:17:14 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=20 best_val_accuracy=79.78% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:17:14 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=21/30
+2026-10-30 20:17:14 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=21 phase=training
+2026-10-30 20:17:31 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=21 phase=training loss=0.6470 accuracy=77.43%
+2026-10-30 20:17:31 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=21 phase=validation
+2026-10-30 20:17:32 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=21 phase=validation loss=0.6719 accuracy=77.64%
+2026-10-30 20:17:32 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=21/30 train_loss=0.6470 train_accuracy=77.43% val_loss=0.6719 val_accuracy=77.64% best_val_accuracy_before=79.78% elapsed_sec=17.91
+2026-10-30 20:17:32 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=22/30
+2026-10-30 20:17:32 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=22 phase=training
+2026-10-30 20:17:49 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=22 phase=training loss=0.6343 accuracy=78.01%
+2026-10-30 20:17:49 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=22 phase=validation
+2026-10-30 20:17:50 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=22 phase=validation loss=0.6160 accuracy=79.64%
+2026-10-30 20:17:50 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=22/30 train_loss=0.6343 train_accuracy=78.01% val_loss=0.6160 val_accuracy=79.64% best_val_accuracy_before=79.78% elapsed_sec=18.01
+2026-10-30 20:17:50 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=23/30
+2026-10-30 20:17:50 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=23 phase=training
+2026-10-30 20:18:07 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=23 phase=training loss=0.6210 accuracy=78.58%
+2026-10-30 20:18:07 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=23 phase=validation
+2026-10-30 20:18:08 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=23 phase=validation loss=0.6788 accuracy=77.52%
+2026-10-30 20:18:08 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=23/30 train_loss=0.6210 train_accuracy=78.58% val_loss=0.6788 val_accuracy=77.52% best_val_accuracy_before=79.78% elapsed_sec=18.23
+2026-10-30 20:18:08 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=24/30
+2026-10-30 20:18:08 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=24 phase=training
+2026-10-30 20:18:25 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=24 phase=training loss=0.6168 accuracy=78.70%
+2026-10-30 20:18:25 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=24 phase=validation
+2026-10-30 20:18:27 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=24 phase=validation loss=0.5794 accuracy=81.06%
+2026-10-30 20:18:27 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=24/30 train_loss=0.6168 train_accuracy=78.70% val_loss=0.5794 val_accuracy=81.06% best_val_accuracy_before=79.78% elapsed_sec=18.27
+2026-10-30 20:18:27 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=24 best_val_accuracy=81.06% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:18:27 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=25/30
+2026-10-30 20:18:27 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=25 phase=training
+2026-10-30 20:18:44 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=25 phase=training loss=0.6100 accuracy=78.97%
+2026-10-30 20:18:44 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=25 phase=validation
+2026-10-30 20:18:45 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=25 phase=validation loss=0.7471 accuracy=75.80%
+2026-10-30 20:18:45 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=25/30 train_loss=0.6100 train_accuracy=78.97% val_loss=0.7471 val_accuracy=75.80% best_val_accuracy_before=81.06% elapsed_sec=18.11
+2026-10-30 20:18:45 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=26/30
+2026-10-30 20:18:45 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=26 phase=training
+2026-10-30 20:19:02 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=26 phase=training loss=0.6029 accuracy=79.22%
+2026-10-30 20:19:02 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=26 phase=validation
+2026-10-30 20:19:03 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=26 phase=validation loss=0.5800 accuracy=80.26%
+2026-10-30 20:19:03 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=26/30 train_loss=0.6029 train_accuracy=79.22% val_loss=0.5800 val_accuracy=80.26% best_val_accuracy_before=81.06% elapsed_sec=18.01
+2026-10-30 20:19:03 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=27/30
+2026-10-30 20:19:03 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=27 phase=training
+2026-10-30 20:19:20 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=27 phase=training loss=0.5956 accuracy=79.11%
+2026-10-30 20:19:20 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=27 phase=validation
+2026-10-30 20:19:21 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=27 phase=validation loss=0.6318 accuracy=78.60%
+2026-10-30 20:19:21 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=27/30 train_loss=0.5956 train_accuracy=79.11% val_loss=0.6318 val_accuracy=78.60% best_val_accuracy_before=81.06% elapsed_sec=18.11
+2026-10-30 20:19:21 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=28/30
+2026-10-30 20:19:21 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=28 phase=training
+2026-10-30 20:19:38 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=28 phase=training loss=0.5881 accuracy=79.51%
+2026-10-30 20:19:38 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=28 phase=validation
+2026-10-30 20:19:39 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=28 phase=validation loss=0.7741 accuracy=76.78%
+2026-10-30 20:19:39 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=28/30 train_loss=0.5881 train_accuracy=79.51% val_loss=0.7741 val_accuracy=76.78% best_val_accuracy_before=81.06% elapsed_sec=18.16
+2026-10-30 20:19:39 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=29/30
+2026-10-30 20:19:39 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=29 phase=training
+2026-10-30 20:19:56 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=29 phase=training loss=0.5774 accuracy=80.16%
+2026-10-30 20:19:56 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=29 phase=validation
+2026-10-30 20:19:57 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=29 phase=validation loss=0.5714 accuracy=81.12%
+2026-10-30 20:19:57 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=29/30 train_loss=0.5774 train_accuracy=80.16% val_loss=0.5714 val_accuracy=81.12% best_val_accuracy_before=81.06% elapsed_sec=18.27
+2026-10-30 20:19:57 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=29 best_val_accuracy=81.12% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:19:57 | INFO     | vgg6.engine | EPOCH START | run=verify_epochs_30 epoch=30/30
+2026-10-30 20:19:57 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=30 phase=training
+2026-10-30 20:20:14 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=30 phase=training loss=0.5785 accuracy=79.89%
+2026-10-30 20:20:14 | INFO     | vgg6.engine | PHASE START | run=verify_epochs_30 epoch=30 phase=validation
+2026-10-30 20:20:15 | INFO     | vgg6.engine | PHASE COMPLETE | run=verify_epochs_30 epoch=30 phase=validation loss=0.5347 accuracy=81.80%
+2026-10-30 20:20:15 | INFO     | vgg6.engine | EPOCH METRICS | run=verify_epochs_30 epoch=30/30 train_loss=0.5785 train_accuracy=79.89% val_loss=0.5347 val_accuracy=81.80% best_val_accuracy_before=81.12% elapsed_sec=18.10
+2026-10-30 20:20:15 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=verify_epochs_30 epoch=30 best_val_accuracy=81.80% path=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:20:15 | INFO     | vgg6.engine | STAGE COMPLETE | run=verify_epochs_30 stage=train_validate best_epoch=30 best_val_accuracy=81.80%
+2026-10-30 20:20:15 | INFO     | vgg6.engine | STAGE START | run=verify_epochs_30 stage=final_test_evaluation checkpoint_epoch=30
+2026-10-30 20:20:18 | INFO     | vgg6.engine | STAGE COMPLETE | run=verify_epochs_30 stage=final_test_evaluation test_loss=0.5553 test_accuracy=81.81%
+2026-10-30 20:20:18 | INFO     | vgg6.engine | RUN COMPLETE | run=verify_epochs_30 best_epoch=30 best_val_accuracy=81.80% test_accuracy=81.81% elapsed_min=9.19 checkpoint=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:20:18 | INFO     | vgg6 | CHECKPOINTED RESULTS | completed_runs=1 summary_csv=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/experiment_summary.csv history_csv=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/epoch_history.csv
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT STAGE START | runs=1
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT GENERATION START | output_dir=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/plots run_count=1
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT RUN START | run=verify_epochs_30 index=1/1
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT RUN COMPLETE | run=verify_epochs_30 files=5
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT GENERATION COMPLETE | directory=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/plots
+2026-10-30 20:20:18 | INFO     | vgg6 | PLOT STAGE COMPLETE | directory=/content/CS25M539_Assignment1/assessment_results/best_config_rerun/plots
+2026-10-30 20:20:18 | INFO     | vgg6 | FINAL SUMMARY | selected by best validation accuracy:
+             run        group activation optimizer  batch_size  learning_rate  epochs  seed  best_epoch  best_val_accuracy  test_loss  test_accuracy  minutes                                                                                          checkpoint
+verify_epochs_30 verification       relu      adam          64          0.001      30    42          30               81.8   0.555288          81.81 9.142768 /content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth
+2026-10-30 20:20:18 | INFO     | vgg6 | OUTPUTS | directory=/content/CS25M539_Assignment1/assessment_results/best_config_rerun
+2026-10-30 20:20:18 | INFO     | vgg6 | PROJECT COMPLETE | group=verify-best runs=1

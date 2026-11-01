@@ -1,0 +1,9 @@
+# Tested dependency set for Python 3.11 (CPU or CUDA-enabled PyTorch install).
+# For a CUDA runtime, install the matching PyTorch wheel first using the official selector:
+# https://pytorch.org/get-started/locally/
+torch==2.5.1
+torchvision==0.20.1
+numpy==1.26.4
+pandas==2.2.3
+matplotlib==3.9.2
+wandb==0.18.7

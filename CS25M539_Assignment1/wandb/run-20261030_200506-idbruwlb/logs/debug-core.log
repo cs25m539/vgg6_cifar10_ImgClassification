@@ -1,0 +1,147 @@
+{"time":"2026-10-30T20:04:07.791446063Z","level":"INFO","msg":"main: starting server","port-filename":"/tmp/tmp48dxmpaw/port-1080.txt","pid":1080,"detached":false,"idle-timeout":600000000000,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2026-10-30T20:04:07.79408731Z","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/tmp/wandb-1080-41920-2366078815/socket","Net":"unix"}}
+{"time":"2026-10-30T20:04:07.794167193Z","level":"INFO","msg":"server: will exit if parent process dies","ppid":1080}
+{"time":"2026-10-30T20:04:07.896904063Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2026-10-30T20:04:25.834205216Z","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"2(@)"}
+{"time":"2026-10-30T20:04:26.426539358Z","level":"INFO","msg":"handleInformInit: received","streamId":"0scge8vw","id":"2(@)"}
+{"time":"2026-10-30T20:04:26.536297271Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"0scge8vw","id":"2(@)"}
+{"time":"2026-10-30T20:04:28.134125575Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"ug5h2wqijvy2"}
+{"time":"2026-10-30T20:04:30.344171157Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"ug5h2wqijvy2"}
+{"time":"2026-10-30T20:04:30.345954675Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"0scge8vw","id":"2(@)"}
+{"time":"2026-10-30T20:04:30.34996626Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"0scge8vw","id":"2(@)"}
+{"time":"2026-10-30T20:04:30.5966975Z","level":"INFO","msg":"handleInformInit: received","streamId":"l4nuxb05","id":"2(@)"}
+{"time":"2026-10-30T20:04:30.702903951Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"l4nuxb05","id":"2(@)"}
+{"time":"2026-10-30T20:04:32.632964204Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"ji4mm1fix79f"}
+{"time":"2026-10-30T20:04:34.824565515Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"ji4mm1fix79f"}
+{"time":"2026-10-30T20:04:34.826443932Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"l4nuxb05","id":"2(@)"}
+{"time":"2026-10-30T20:04:34.831597184Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"l4nuxb05","id":"2(@)"}
+{"time":"2026-10-30T20:04:35.109200402Z","level":"INFO","msg":"handleInformInit: received","streamId":"lz4s7eum","id":"2(@)"}
+{"time":"2026-10-30T20:04:35.212458949Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"lz4s7eum","id":"2(@)"}
+{"time":"2026-10-30T20:04:37.220989322Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"o1nlwkrmcaaj"}
+{"time":"2026-10-30T20:04:40.110241131Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"o1nlwkrmcaaj"}
+{"time":"2026-10-30T20:04:40.111938436Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"lz4s7eum","id":"2(@)"}
+{"time":"2026-10-30T20:04:40.115679882Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"lz4s7eum","id":"2(@)"}
+{"time":"2026-10-30T20:04:40.371155718Z","level":"INFO","msg":"handleInformInit: received","streamId":"trsw7y3u","id":"2(@)"}
+{"time":"2026-10-30T20:04:40.474159994Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"trsw7y3u","id":"2(@)"}
+{"time":"2026-10-30T20:04:44.402830345Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"oza9krp09ox7"}
+{"time":"2026-10-30T20:04:47.016273102Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"oza9krp09ox7"}
+{"time":"2026-10-30T20:04:47.017886109Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"trsw7y3u","id":"2(@)"}
+{"time":"2026-10-30T20:04:47.022387806Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"trsw7y3u","id":"2(@)"}
+{"time":"2026-10-30T20:04:47.279572508Z","level":"INFO","msg":"handleInformInit: received","streamId":"s7ype5b7","id":"2(@)"}
+{"time":"2026-10-30T20:04:47.383192698Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"s7ype5b7","id":"2(@)"}
+{"time":"2026-10-30T20:04:48.653491964Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"wwqyk39cvo48"}
+{"time":"2026-10-30T20:04:50.85909093Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"wwqyk39cvo48"}
+{"time":"2026-10-30T20:04:50.861430212Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"s7ype5b7","id":"2(@)"}
+{"time":"2026-10-30T20:04:50.866547676Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"s7ype5b7","id":"2(@)"}
+{"time":"2026-10-30T20:04:51.137387095Z","level":"INFO","msg":"handleInformInit: received","streamId":"wd1aixbg","id":"2(@)"}
+{"time":"2026-10-30T20:04:51.240099407Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"wd1aixbg","id":"2(@)"}
+{"time":"2026-10-30T20:04:52.543466726Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"yid5m3622y8t"}
+{"time":"2026-10-30T20:04:54.582925685Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"yid5m3622y8t"}
+{"time":"2026-10-30T20:04:54.584559394Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"wd1aixbg","id":"2(@)"}
+{"time":"2026-10-30T20:04:54.59307723Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"wd1aixbg","id":"2(@)"}
+{"time":"2026-10-30T20:04:54.847609845Z","level":"INFO","msg":"handleInformInit: received","streamId":"3t2xwt53","id":"2(@)"}
+{"time":"2026-10-30T20:04:54.951374357Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"3t2xwt53","id":"2(@)"}
+{"time":"2026-10-30T20:04:56.289923682Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"w5xu1birn7n5"}
+{"time":"2026-10-30T20:04:58.448149069Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"w5xu1birn7n5"}
+{"time":"2026-10-30T20:04:58.44997553Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"3t2xwt53","id":"2(@)"}
+{"time":"2026-10-30T20:04:58.455541568Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"3t2xwt53","id":"2(@)"}
+{"time":"2026-10-30T20:04:58.728118213Z","level":"INFO","msg":"handleInformInit: received","streamId":"8ctgz6ti","id":"2(@)"}
+{"time":"2026-10-30T20:04:58.831424062Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"8ctgz6ti","id":"2(@)"}
+{"time":"2026-10-30T20:05:00.315673227Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"9kgponaphcyr"}
+{"time":"2026-10-30T20:05:03.155657464Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"9kgponaphcyr"}
+{"time":"2026-10-30T20:05:03.157441256Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"8ctgz6ti","id":"2(@)"}
+{"time":"2026-10-30T20:05:03.164535616Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"8ctgz6ti","id":"2(@)"}
+{"time":"2026-10-30T20:05:03.417803834Z","level":"INFO","msg":"handleInformInit: received","streamId":"eqagrdsl","id":"2(@)"}
+{"time":"2026-10-30T20:05:03.520701582Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"eqagrdsl","id":"2(@)"}
+{"time":"2026-10-30T20:05:04.849320121Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"3wavcxvmjabu"}
+{"time":"2026-10-30T20:05:06.548646414Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"3wavcxvmjabu"}
+{"time":"2026-10-30T20:05:06.550298892Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"eqagrdsl","id":"2(@)"}
+{"time":"2026-10-30T20:05:06.554586784Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"eqagrdsl","id":"2(@)"}
+{"time":"2026-10-30T20:05:06.824889667Z","level":"INFO","msg":"handleInformInit: received","streamId":"idbruwlb","id":"2(@)"}
+{"time":"2026-10-30T20:05:06.928429137Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"idbruwlb","id":"2(@)"}
+{"time":"2026-10-30T20:05:08.241376928Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"r5kodx1qjnr6"}
+{"time":"2026-10-30T20:05:11.093657219Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"r5kodx1qjnr6"}
+{"time":"2026-10-30T20:05:11.09623288Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"idbruwlb","id":"2(@)"}
+{"time":"2026-10-30T20:05:11.100845106Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"idbruwlb","id":"2(@)"}
+{"time":"2026-10-30T20:05:11.357228805Z","level":"INFO","msg":"handleInformInit: received","streamId":"3zrcq1oh","id":"2(@)"}
+{"time":"2026-10-30T20:05:11.460803313Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"3zrcq1oh","id":"2(@)"}
+{"time":"2026-10-30T20:05:12.854226287Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"8hanxohjtvpf"}
+{"time":"2026-10-30T20:05:15.100386524Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"8hanxohjtvpf"}
+{"time":"2026-10-30T20:05:15.101948254Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"3zrcq1oh","id":"2(@)"}
+{"time":"2026-10-30T20:05:15.106315069Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"3zrcq1oh","id":"2(@)"}
+{"time":"2026-10-30T20:05:15.362731676Z","level":"INFO","msg":"handleInformInit: received","streamId":"q8cexr03","id":"2(@)"}
+{"time":"2026-10-30T20:05:15.466859224Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"q8cexr03","id":"2(@)"}
+{"time":"2026-10-30T20:05:16.947698283Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"hk3jy148msid"}
+{"time":"2026-10-30T20:05:18.932457675Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"hk3jy148msid"}
+{"time":"2026-10-30T20:05:18.934309992Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"q8cexr03","id":"2(@)"}
+{"time":"2026-10-30T20:05:18.938445122Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"q8cexr03","id":"2(@)"}
+{"time":"2026-10-30T20:05:19.202832043Z","level":"INFO","msg":"handleInformInit: received","streamId":"w4rxnc15","id":"2(@)"}
+{"time":"2026-10-30T20:05:19.30616362Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"w4rxnc15","id":"2(@)"}
+{"time":"2026-10-30T20:05:20.618193956Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"568zc2qkiw8n"}
+{"time":"2026-10-30T20:05:22.789404625Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"568zc2qkiw8n"}
+{"time":"2026-10-30T20:05:22.791068119Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"w4rxnc15","id":"2(@)"}
+{"time":"2026-10-30T20:05:22.796215439Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"w4rxnc15","id":"2(@)"}
+{"time":"2026-10-30T20:05:23.043152445Z","level":"INFO","msg":"handleInformInit: received","streamId":"a8olg6ch","id":"2(@)"}
+{"time":"2026-10-30T20:05:23.1464515Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"a8olg6ch","id":"2(@)"}
+{"time":"2026-10-30T20:05:24.512636944Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"gqd37lzi14lz"}
+{"time":"2026-10-30T20:05:26.660883291Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"gqd37lzi14lz"}
+{"time":"2026-10-30T20:05:26.662626101Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"a8olg6ch","id":"2(@)"}
+{"time":"2026-10-30T20:05:26.666839565Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"a8olg6ch","id":"2(@)"}
+{"time":"2026-10-30T20:05:26.927163452Z","level":"INFO","msg":"handleInformInit: received","streamId":"3nn8ri2o","id":"2(@)"}
+{"time":"2026-10-30T20:05:27.030583901Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"3nn8ri2o","id":"2(@)"}
+{"time":"2026-10-30T20:05:28.346977497Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"keoabrsaaeem"}
+{"time":"2026-10-30T20:05:29.78853528Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"keoabrsaaeem"}
+{"time":"2026-10-30T20:05:29.790070619Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"3nn8ri2o","id":"2(@)"}
+{"time":"2026-10-30T20:05:29.796039095Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"3nn8ri2o","id":"2(@)"}
+{"time":"2026-10-30T20:05:30.053468067Z","level":"INFO","msg":"handleInformInit: received","streamId":"ywl945rf","id":"2(@)"}
+{"time":"2026-10-30T20:05:30.160161036Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"ywl945rf","id":"2(@)"}
+{"time":"2026-10-30T20:05:31.57264508Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"yjzcu2ccy0c8"}
+{"time":"2026-10-30T20:05:33.777691134Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"yjzcu2ccy0c8"}
+{"time":"2026-10-30T20:05:33.779382977Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"ywl945rf","id":"2(@)"}
+{"time":"2026-10-30T20:05:33.785382638Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"ywl945rf","id":"2(@)"}
+{"time":"2026-10-30T20:05:34.678931484Z","level":"INFO","msg":"handleInformInit: received","streamId":"1ab740qz","id":"2(@)"}
+{"time":"2026-10-30T20:05:34.78188775Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"1ab740qz","id":"2(@)"}
+{"time":"2026-10-30T20:05:36.211699885Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"q23miotcw9lv"}
+{"time":"2026-10-30T20:05:41.255941014Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"q23miotcw9lv"}
+{"time":"2026-10-30T20:05:41.257689484Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"1ab740qz","id":"2(@)"}
+{"time":"2026-10-30T20:05:41.262597056Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"1ab740qz","id":"2(@)"}
+{"time":"2026-10-30T20:05:41.526365392Z","level":"INFO","msg":"handleInformInit: received","streamId":"nty29i5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:41.629741181Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"nty29i5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:43.787039735Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"3kg4dw5ypitz"}
+{"time":"2026-10-30T20:05:46.050044276Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"3kg4dw5ypitz"}
+{"time":"2026-10-30T20:05:46.051815888Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"nty29i5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:46.056218384Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"nty29i5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:46.311024693Z","level":"INFO","msg":"handleInformInit: received","streamId":"g7wu3jg5","id":"2(@)"}
+{"time":"2026-10-30T20:05:46.413739138Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"g7wu3jg5","id":"2(@)"}
+{"time":"2026-10-30T20:05:47.870419602Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"nh0lrbl4k3hq"}
+{"time":"2026-10-30T20:05:50.256338078Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"nh0lrbl4k3hq"}
+{"time":"2026-10-30T20:05:50.258134261Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"g7wu3jg5","id":"2(@)"}
+{"time":"2026-10-30T20:05:50.264096253Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"g7wu3jg5","id":"2(@)"}
+{"time":"2026-10-30T20:05:50.536871539Z","level":"INFO","msg":"handleInformInit: received","streamId":"d7nmmvfi","id":"2(@)"}
+{"time":"2026-10-30T20:05:50.640222446Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"d7nmmvfi","id":"2(@)"}
+{"time":"2026-10-30T20:05:52.173983429Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"rfm9x16lye04"}
+{"time":"2026-10-30T20:05:54.442030698Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"rfm9x16lye04"}
+{"time":"2026-10-30T20:05:54.443648076Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"d7nmmvfi","id":"2(@)"}
+{"time":"2026-10-30T20:05:54.446824879Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"d7nmmvfi","id":"2(@)"}
+{"time":"2026-10-30T20:05:54.702166036Z","level":"INFO","msg":"handleInformInit: received","streamId":"a1po3g5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:54.807597579Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"a1po3g5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:56.181114763Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"a7q5lbp55hd1"}
+{"time":"2026-10-30T20:05:58.457628786Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"a7q5lbp55hd1"}
+{"time":"2026-10-30T20:05:58.459533804Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"a1po3g5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:58.463494713Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"a1po3g5b","id":"2(@)"}
+{"time":"2026-10-30T20:05:58.759084342Z","level":"INFO","msg":"handleInformInit: received","streamId":"rnzwyn5a","id":"2(@)"}
+{"time":"2026-10-30T20:05:58.862070411Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"rnzwyn5a","id":"2(@)"}
+{"time":"2026-10-30T20:06:01.604127665Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"785fk2yqci0k"}
+{"time":"2026-10-30T20:06:07.143936102Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"785fk2yqci0k"}
+{"time":"2026-10-30T20:06:07.14540602Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"rnzwyn5a","id":"2(@)"}
+{"time":"2026-10-30T20:06:07.148712054Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"rnzwyn5a","id":"2(@)"}
+{"time":"2026-10-30T20:06:07.438993012Z","level":"INFO","msg":"handleInformInit: received","streamId":"knv37m12","id":"2(@)"}
+{"time":"2026-10-30T20:06:07.543575263Z","level":"INFO","msg":"handleInformInit: stream started","streamId":"knv37m12","id":"2(@)"}
+{"time":"2026-10-30T20:06:09.825864788Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"zo5a9mkt8id3"}
+{"time":"2026-10-30T20:06:14.317951875Z","level":"INFO","msg":"connection: cancelling request","id":"2(@)","requestId":"zo5a9mkt8id3"}
+{"time":"2026-10-30T20:06:14.31941507Z","level":"INFO","msg":"handleInformFinish: finish message received","streamId":"knv37m12","id":"2(@)"}
+{"time":"2026-10-30T20:06:14.322251337Z","level":"INFO","msg":"handleInformFinish: stream closed","streamId":"knv37m12","id":"2(@)"}
+{"time":"2026-10-30T20:06:14.602323451Z","level":"INFO","msg":"connection: closing","id":"2(@)"}
+{"time":"2026-10-30T20:06:14.602389937Z","level":"INFO","msg":"connection: closed successfully","id":"2(@)"}
+{"time":"2026-10-30T20:06:14.602400044Z","level":"INFO","msg":"processOutgoingData: finished","id":"2(@)"}
+{"time":"2026-10-30T20:06:14.602415215Z","level":"INFO","msg":"connection: ManageConnectionData: connection closed","id":"2(@)"}

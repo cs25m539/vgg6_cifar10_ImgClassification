@@ -1,0 +1,22 @@
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:setup_run_log_directory():729] Logging user logs to /content/CS25M539_Assignment1/wandb/run-20261030_200430-l4nuxb05/logs/debug.log
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:setup_run_log_directory():730] Logging internal logs to /content/CS25M539_Assignment1/wandb/run-20261030_200430-l4nuxb05/logs/debug-internal.log
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:init():772] calling init triggers
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:init():777] wandb.init called with sweep_config: {}
+config: {'run': 'activation_relu', 'group': 'activation', 'activation': 'relu', 'optimizer': 'adam', 'batch_size': 64, 'learning_rate': 0.001, 'epochs': 20, 'seed': 42, 'best_epoch': 20, 'best_val_accuracy': 79.78, 'test_loss': 0.6114605130195617, 'test_accuracy': 79.65, 'minutes': 6.422097484270732, 'checkpoint': '/content/CS25M539_Assignment1/assessment_results/all/checkpoints/activation_relu.pth', '_wandb': {}}
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:init():820] starting backend
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:init():826] Connected to an existing wandb-core service via WANDB_SERVICE
+2026-10-30 20:04:30,595 INFO    MainThread:41932 [wandb_init.py:init():835] sending inform_init request
+2026-10-30 20:04:30,704 INFO    MainThread:41932 [wandb_init.py:init():840] backend started and connected
+2026-10-30 20:04:30,705 INFO    MainThread:41932 [wandb_init.py:init():910] updated telemetry
+2026-10-30 20:04:30,709 INFO    MainThread:41932 [wandb_init.py:init():933] communicating run to backend with 90.0 second timeout
+2026-10-30 20:04:32,016 INFO    MainThread:41932 [wandb_init.py:init():978] starting run threads in backend
+2026-10-30 20:04:32,614 INFO    MainThread:41932 [wandb_run.py:_console_start():2621] atexit reg
+2026-10-30 20:04:32,614 INFO    MainThread:41932 [wandb_run.py:_redirect():2471] redirect: wrap_raw
+2026-10-30 20:04:32,614 INFO    MainThread:41932 [wandb_run.py:_redirect():2540] Wrapping output streams.
+2026-10-30 20:04:32,614 INFO    MainThread:41932 [wandb_run.py:_redirect():2563] Redirects installed.
+2026-10-30 20:04:32,615 INFO    MainThread:41932 [wandb_init.py:init():1016] run started, returning control to user process
+2026-10-30 20:04:32,631 INFO    MainThread:41932 [wandb_run.py:_finish():2383] finishing run suri-logan-iit-iit-madras-foundation/vgg6-cifar10-curves/l4nuxb05
+2026-10-30 20:04:32,632 INFO    MainThread:41932 [wandb_run.py:_atexit_cleanup():2588] got exitcode: 0
+2026-10-30 20:04:32,632 INFO    MainThread:41932 [wandb_run.py:_restore():2570] restore
+2026-10-30 20:04:32,632 INFO    MainThread:41932 [wandb_run.py:_restore():2576] restore done
+2026-10-30 20:04:34,825 INFO    MainThread:41932 [wandb_run.py:_footer_sync_info():3993] logging synced files

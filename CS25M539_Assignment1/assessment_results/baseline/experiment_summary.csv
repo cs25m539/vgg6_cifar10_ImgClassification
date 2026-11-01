@@ -1,0 +1,2 @@
+run,group,activation,optimizer,batch_size,learning_rate,epochs,seed,best_epoch,best_val_accuracy,test_loss,test_accuracy,minutes,checkpoint
+baseline_custom,baseline,relu,adam,64,0.01,20,42,16,81.38,0.6007084401607513,80.68,6.3046852350234985,/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth

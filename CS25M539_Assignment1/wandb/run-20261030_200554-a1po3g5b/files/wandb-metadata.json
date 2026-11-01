@@ -1,0 +1,46 @@
+{
+  "os":  "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python":  "CPython 3.13.16",
+  "startedAt":  "2026-10-30T20:05:54.699431Z",
+  "args":  [
+    "--history-csv",
+    "/content/CS25M539_Assignment1/assessment_results/all/epoch_history.csv",
+    "--summary-csv",
+    "/content/CS25M539_Assignment1/assessment_results/all/experiment_summary.csv",
+    "--output-dir",
+    "/content/CS25M539_Assignment1/assessment_results/wandb_reports",
+    "--wandb-project",
+    "vgg6-cifar10"
+  ],
+  "program":  "/content/CS25M539_Assignment1/plot_from_csv.py",
+  "codePath":  "plot_from_csv.py",
+  "codePathLocal":  "plot_from_csv.py",
+  "email":  "suri.logan.iit@gmail.com",
+  "root":  "/content/CS25M539_Assignment1",
+  "host":  "db7f5c7fb9d4",
+  "executable":  "/usr/bin/python3",
+  "cpu_count":  1,
+  "cpu_count_logical":  2,
+  "gpu":  "Tesla T4",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "120942624768",
+      "used":  "46104039424"
+    }
+  },
+  "memory":  {
+    "total":  "13605818368"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Tesla T4",
+      "memoryTotal":  "16106127360",
+      "cudaCores":  2560,
+      "architecture":  "Turing",
+      "uuid":  "GPU-c3f0bd68-9ff3-7615-e5fb-70df3f9a03b9"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "ichj2hn5sfg1gdjaul39w1yc24po5u0h"
+}

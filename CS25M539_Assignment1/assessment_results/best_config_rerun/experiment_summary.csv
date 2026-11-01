@@ -1,0 +1,2 @@
+run,group,activation,optimizer,batch_size,learning_rate,epochs,seed,best_epoch,best_val_accuracy,test_loss,test_accuracy,minutes,checkpoint
+verify_epochs_30,verification,relu,adam,64,0.001,30,42,30,81.8,0.5552877724647522,81.81,9.142768140633901,/content/CS25M539_Assignment1/assessment_results/best_config_rerun/checkpoints/verify_epochs_30.pth

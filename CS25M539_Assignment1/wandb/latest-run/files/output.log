@@ -1,0 +1,1 @@
+2026-10-30 20:06:09 | INFO     | vgg6.csv_reporting | WANDB PARALLEL COORDINATES CHART CREATED | axes=['activation', 'optimizer', 'batch_size', 'learning_rate', 'epochs', 'best_epoch', 'best_val_accuracy']

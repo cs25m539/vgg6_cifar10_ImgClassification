@@ -1,0 +1,165 @@
+2026-10-30 17:33:06 | INFO     | vgg6 | ========================================================================================
+2026-10-30 17:33:06 | INFO     | vgg6 | PROJECT START | group=baseline seed=42 output_dir=/content/CS25M539_Assignment1/assessment_results/baseline
+2026-10-30 17:33:06 | INFO     | vgg6 | Arguments: {'group': 'baseline', 'epochs': 20, 'batch_size': 64, 'learning_rate': 0.01, 'activation': 'relu', 'optimizer': 'adam', 'data_dir': '/content/CS25M539_Assignment1/data', 'output_dir': '/content/CS25M539_Assignment1/assessment_results/baseline', 'seed': 42, 'num_workers': 2, 'summary_csv': None, 'wandb': False, 'wandb_project': 'vgg6-cifar10'}
+2026-10-30 17:33:06 | INFO     | vgg6 | SETUP COMPLETE | device=cuda seed=42 experiment_count=1
+2026-10-30 17:33:06 | INFO     | vgg6 | EXPERIMENT QUEUED | index=1/1 run=baseline_custom config={'run': 'baseline_custom', 'group': 'baseline', 'activation': 'relu', 'optimizer': 'adam', 'batch_size': 64, 'learning_rate': 0.01, 'epochs': 20}
+2026-10-30 17:33:06 | INFO     | vgg6.engine | RUN START | run=baseline_custom group=baseline activation=relu optimizer=adam batch_size=64 learning_rate=0.01 epochs=20 seed=42 device=cuda
+2026-10-30 17:33:06 | INFO     | vgg6.engine | STAGE START | run=baseline_custom stage=seed_and_reproducibility
+2026-10-30 17:33:06 | INFO     | vgg6.reproducibility | REPRODUCIBILITY CONFIGURED | seed=42 deterministic=True cuda_available=True
+2026-10-30 17:33:06 | INFO     | vgg6.engine | STAGE COMPLETE | run=baseline_custom stage=seed_and_reproducibility seed=42
+2026-10-30 17:33:06 | INFO     | vgg6.engine | STAGE START | run=baseline_custom stage=data_loading
+2026-10-30 17:33:06 | INFO     | vgg6.data | DATASET STAGE START | data_dir=/content/CS25M539_Assignment1/data batch_size=64 seed=42 workers=2
+2026-10-30 17:34:11 | INFO     | vgg6.data | DATASETS READY | train_pool=50000 validation_pool=50000 test=10000
+2026-10-30 17:34:11 | INFO     | vgg6.data | DATASET STAGE COMPLETE | train_examples=45000 validation_examples=5000 test_examples=10000 train_batches=704 validation_batches=79 test_batches=157 elapsed_sec=64.79
+2026-10-30 17:34:11 | INFO     | vgg6.engine | STAGE COMPLETE | run=baseline_custom stage=data_loading train_batches=704 val_batches=79 test_batches=157 elapsed_sec=64.79
+2026-10-30 17:34:11 | INFO     | vgg6.engine | STAGE START | run=baseline_custom stage=model_and_optimizer_setup
+2026-10-30 17:34:11 | INFO     | vgg6.model | MODEL CREATED | architecture=VGG6 activation=relu parameters=261834 classes=10
+2026-10-30 17:34:11 | INFO     | vgg6.model | OPTIMIZER CREATED | name=adam learning_rate=0.01
+2026-10-30 17:34:11 | INFO     | vgg6.engine | STAGE COMPLETE | run=baseline_custom stage=model_and_optimizer_setup parameters=261834
+2026-10-30 17:34:11 | INFO     | vgg6.engine | STAGE START | run=baseline_custom stage=train_validate requested_epochs=20 checkpoint=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:34:11 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=1/20
+2026-10-30 17:34:11 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=1 phase=training
+2026-10-30 17:34:31 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=1 phase=training loss=1.6409 accuracy=39.36%
+2026-10-30 17:34:31 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=1 phase=validation
+2026-10-30 17:34:32 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=1 phase=validation loss=2.1962 accuracy=37.20%
+2026-10-30 17:34:32 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=1/20 train_loss=1.6409 train_accuracy=39.36% val_loss=2.1962 val_accuracy=37.20% best_val_accuracy_before=-1.00% elapsed_sec=21.58
+2026-10-30 17:34:32 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=1 best_val_accuracy=37.20% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:34:32 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=2/20
+2026-10-30 17:34:32 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=2 phase=training
+2026-10-30 17:34:50 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=2 phase=training loss=1.2425 accuracy=55.62%
+2026-10-30 17:34:50 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=2 phase=validation
+2026-10-30 17:34:51 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=2 phase=validation loss=1.2595 accuracy=57.24%
+2026-10-30 17:34:51 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=2/20 train_loss=1.2425 train_accuracy=55.62% val_loss=1.2595 val_accuracy=57.24% best_val_accuracy_before=37.20% elapsed_sec=18.81
+2026-10-30 17:34:51 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=2 best_val_accuracy=57.24% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:34:51 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=3/20
+2026-10-30 17:34:51 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=3 phase=training
+2026-10-30 17:35:09 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=3 phase=training loss=1.0852 accuracy=61.40%
+2026-10-30 17:35:09 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=3 phase=validation
+2026-10-30 17:35:10 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=3 phase=validation loss=1.0807 accuracy=63.62%
+2026-10-30 17:35:10 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=3/20 train_loss=1.0852 train_accuracy=61.40% val_loss=1.0807 val_accuracy=63.62% best_val_accuracy_before=57.24% elapsed_sec=18.58
+2026-10-30 17:35:10 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=3 best_val_accuracy=63.62% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:35:10 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=4/20
+2026-10-30 17:35:10 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=4 phase=training
+2026-10-30 17:35:27 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=4 phase=training loss=0.9757 accuracy=65.71%
+2026-10-30 17:35:27 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=4 phase=validation
+2026-10-30 17:35:29 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=4 phase=validation loss=0.8295 accuracy=70.78%
+2026-10-30 17:35:29 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=4/20 train_loss=0.9757 train_accuracy=65.71% val_loss=0.8295 val_accuracy=70.78% best_val_accuracy_before=63.62% elapsed_sec=18.77
+2026-10-30 17:35:29 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=4 best_val_accuracy=70.78% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:35:29 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=5/20
+2026-10-30 17:35:29 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=5 phase=training
+2026-10-30 17:35:46 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=5 phase=training loss=0.9006 accuracy=68.60%
+2026-10-30 17:35:46 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=5 phase=validation
+2026-10-30 17:35:48 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=5 phase=validation loss=0.8890 accuracy=71.50%
+2026-10-30 17:35:48 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=5/20 train_loss=0.9006 train_accuracy=68.60% val_loss=0.8890 val_accuracy=71.50% best_val_accuracy_before=70.78% elapsed_sec=18.87
+2026-10-30 17:35:48 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=5 best_val_accuracy=71.50% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:35:48 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=6/20
+2026-10-30 17:35:48 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=6 phase=training
+2026-10-30 17:36:05 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=6 phase=training loss=0.8518 accuracy=70.10%
+2026-10-30 17:36:05 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=6 phase=validation
+2026-10-30 17:36:06 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=6 phase=validation loss=0.8050 accuracy=74.04%
+2026-10-30 17:36:06 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=6/20 train_loss=0.8518 train_accuracy=70.10% val_loss=0.8050 val_accuracy=74.04% best_val_accuracy_before=71.50% elapsed_sec=18.48
+2026-10-30 17:36:06 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=6 best_val_accuracy=74.04% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:36:06 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=7/20
+2026-10-30 17:36:06 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=7 phase=training
+2026-10-30 17:36:23 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=7 phase=training loss=0.8046 accuracy=71.99%
+2026-10-30 17:36:23 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=7 phase=validation
+2026-10-30 17:36:25 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=7 phase=validation loss=0.8261 accuracy=73.34%
+2026-10-30 17:36:25 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=7/20 train_loss=0.8046 train_accuracy=71.99% val_loss=0.8261 val_accuracy=73.34% best_val_accuracy_before=74.04% elapsed_sec=18.55
+2026-10-30 17:36:25 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=8/20
+2026-10-30 17:36:25 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=8 phase=training
+2026-10-30 17:36:42 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=8 phase=training loss=0.7689 accuracy=73.34%
+2026-10-30 17:36:42 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=8 phase=validation
+2026-10-30 17:36:43 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=8 phase=validation loss=0.8153 accuracy=73.64%
+2026-10-30 17:36:43 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=8/20 train_loss=0.7689 train_accuracy=73.34% val_loss=0.8153 val_accuracy=73.64% best_val_accuracy_before=74.04% elapsed_sec=18.57
+2026-10-30 17:36:43 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=9/20
+2026-10-30 17:36:43 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=9 phase=training
+2026-10-30 17:37:01 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=9 phase=training loss=0.7389 accuracy=74.23%
+2026-10-30 17:37:01 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=9 phase=validation
+2026-10-30 17:37:02 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=9 phase=validation loss=0.7771 accuracy=75.76%
+2026-10-30 17:37:02 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=9/20 train_loss=0.7389 train_accuracy=74.23% val_loss=0.7771 val_accuracy=75.76% best_val_accuracy_before=74.04% elapsed_sec=18.63
+2026-10-30 17:37:02 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=9 best_val_accuracy=75.76% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:37:02 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=10/20
+2026-10-30 17:37:02 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=10 phase=training
+2026-10-30 17:37:19 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=10 phase=training loss=0.7137 accuracy=75.33%
+2026-10-30 17:37:19 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=10 phase=validation
+2026-10-30 17:37:20 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=10 phase=validation loss=0.6160 accuracy=79.06%
+2026-10-30 17:37:20 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=10/20 train_loss=0.7137 train_accuracy=75.33% val_loss=0.6160 val_accuracy=79.06% best_val_accuracy_before=75.76% elapsed_sec=18.42
+2026-10-30 17:37:20 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=10 best_val_accuracy=79.06% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:37:20 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=11/20
+2026-10-30 17:37:20 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=11 phase=training
+2026-10-30 17:37:38 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=11 phase=training loss=0.6909 accuracy=75.94%
+2026-10-30 17:37:38 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=11 phase=validation
+2026-10-30 17:37:39 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=11 phase=validation loss=0.6737 accuracy=77.82%
+2026-10-30 17:37:39 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=11/20 train_loss=0.6909 train_accuracy=75.94% val_loss=0.6737 val_accuracy=77.82% best_val_accuracy_before=79.06% elapsed_sec=18.78
+2026-10-30 17:37:39 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=12/20
+2026-10-30 17:37:39 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=12 phase=training
+2026-10-30 17:37:56 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=12 phase=training loss=0.6727 accuracy=76.47%
+2026-10-30 17:37:56 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=12 phase=validation
+2026-10-30 17:37:57 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=12 phase=validation loss=0.6892 accuracy=77.56%
+2026-10-30 17:37:57 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=12/20 train_loss=0.6727 train_accuracy=76.47% val_loss=0.6892 val_accuracy=77.56% best_val_accuracy_before=79.06% elapsed_sec=18.26
+2026-10-30 17:37:57 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=13/20
+2026-10-30 17:37:57 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=13 phase=training
+2026-10-30 17:38:15 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=13 phase=training loss=0.6572 accuracy=77.05%
+2026-10-30 17:38:15 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=13 phase=validation
+2026-10-30 17:38:16 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=13 phase=validation loss=0.7162 accuracy=77.24%
+2026-10-30 17:38:16 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=13/20 train_loss=0.6572 train_accuracy=77.05% val_loss=0.7162 val_accuracy=77.24% best_val_accuracy_before=79.06% elapsed_sec=18.64
+2026-10-30 17:38:16 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=14/20
+2026-10-30 17:38:16 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=14 phase=training
+2026-10-30 17:38:33 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=14 phase=training loss=0.6388 accuracy=77.83%
+2026-10-30 17:38:33 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=14 phase=validation
+2026-10-30 17:38:35 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=14 phase=validation loss=0.5773 accuracy=80.40%
+2026-10-30 17:38:35 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=14/20 train_loss=0.6388 train_accuracy=77.83% val_loss=0.5773 val_accuracy=80.40% best_val_accuracy_before=79.06% elapsed_sec=18.72
+2026-10-30 17:38:35 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=14 best_val_accuracy=80.40% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:38:35 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=15/20
+2026-10-30 17:38:35 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=15 phase=training
+2026-10-30 17:38:52 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=15 phase=training loss=0.6253 accuracy=78.18%
+2026-10-30 17:38:52 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=15 phase=validation
+2026-10-30 17:38:53 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=15 phase=validation loss=0.6078 accuracy=80.10%
+2026-10-30 17:38:53 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=15/20 train_loss=0.6253 train_accuracy=78.18% val_loss=0.6078 val_accuracy=80.10% best_val_accuracy_before=80.40% elapsed_sec=18.68
+2026-10-30 17:38:53 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=16/20
+2026-10-30 17:38:53 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=16 phase=training
+2026-10-30 17:39:11 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=16 phase=training loss=0.6082 accuracy=78.78%
+2026-10-30 17:39:11 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=16 phase=validation
+2026-10-30 17:39:12 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=16 phase=validation loss=0.5556 accuracy=81.38%
+2026-10-30 17:39:12 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=16/20 train_loss=0.6082 train_accuracy=78.78% val_loss=0.5556 val_accuracy=81.38% best_val_accuracy_before=80.40% elapsed_sec=18.81
+2026-10-30 17:39:12 | INFO     | vgg6.engine | CHECKPOINT UPDATE | run=baseline_custom epoch=16 best_val_accuracy=81.38% path=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:39:12 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=17/20
+2026-10-30 17:39:12 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=17 phase=training
+2026-10-30 17:39:30 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=17 phase=training loss=0.6010 accuracy=79.30%
+2026-10-30 17:39:30 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=17 phase=validation
+2026-10-30 17:39:31 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=17 phase=validation loss=0.5849 accuracy=80.82%
+2026-10-30 17:39:31 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=17/20 train_loss=0.6010 train_accuracy=79.30% val_loss=0.5849 val_accuracy=80.82% best_val_accuracy_before=81.38% elapsed_sec=18.82
+2026-10-30 17:39:31 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=18/20
+2026-10-30 17:39:31 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=18 phase=training
+2026-10-30 17:39:48 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=18 phase=training loss=0.5835 accuracy=79.79%
+2026-10-30 17:39:48 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=18 phase=validation
+2026-10-30 17:39:50 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=18 phase=validation loss=0.5558 accuracy=81.26%
+2026-10-30 17:39:50 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=18/20 train_loss=0.5835 train_accuracy=79.79% val_loss=0.5558 val_accuracy=81.26% best_val_accuracy_before=81.38% elapsed_sec=18.60
+2026-10-30 17:39:50 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=19/20
+2026-10-30 17:39:50 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=19 phase=training
+2026-10-30 17:40:07 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=19 phase=training loss=0.5752 accuracy=79.79%
+2026-10-30 17:40:07 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=19 phase=validation
+2026-10-30 17:40:08 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=19 phase=validation loss=0.6119 accuracy=80.48%
+2026-10-30 17:40:08 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=19/20 train_loss=0.5752 train_accuracy=79.79% val_loss=0.6119 val_accuracy=80.48% best_val_accuracy_before=81.38% elapsed_sec=18.59
+2026-10-30 17:40:08 | INFO     | vgg6.engine | EPOCH START | run=baseline_custom epoch=20/20
+2026-10-30 17:40:08 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=20 phase=training
+2026-10-30 17:40:26 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=20 phase=training loss=0.5627 accuracy=80.46%
+2026-10-30 17:40:26 | INFO     | vgg6.engine | PHASE START | run=baseline_custom epoch=20 phase=validation
+2026-10-30 17:40:27 | INFO     | vgg6.engine | PHASE COMPLETE | run=baseline_custom epoch=20 phase=validation loss=0.5925 accuracy=81.08%
+2026-10-30 17:40:27 | INFO     | vgg6.engine | EPOCH METRICS | run=baseline_custom epoch=20/20 train_loss=0.5627 train_accuracy=80.46% val_loss=0.5925 val_accuracy=81.08% best_val_accuracy_before=81.38% elapsed_sec=18.70
+2026-10-30 17:40:27 | INFO     | vgg6.engine | STAGE COMPLETE | run=baseline_custom stage=train_validate best_epoch=16 best_val_accuracy=81.38%
+2026-10-30 17:40:27 | INFO     | vgg6.engine | STAGE START | run=baseline_custom stage=final_test_evaluation checkpoint_epoch=16
+2026-10-30 17:40:29 | INFO     | vgg6.engine | STAGE COMPLETE | run=baseline_custom stage=final_test_evaluation test_loss=0.6007 test_accuracy=80.68%
+2026-10-30 17:40:29 | INFO     | vgg6.engine | RUN COMPLETE | run=baseline_custom best_epoch=16 best_val_accuracy=81.38% test_accuracy=80.68% elapsed_min=7.39 checkpoint=/content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:40:29 | INFO     | vgg6 | CHECKPOINTED RESULTS | completed_runs=1 summary_csv=/content/CS25M539_Assignment1/assessment_results/baseline/experiment_summary.csv history_csv=/content/CS25M539_Assignment1/assessment_results/baseline/epoch_history.csv
+2026-10-30 17:40:29 | INFO     | vgg6 | PLOT STAGE START | runs=1
+2026-10-30 17:40:29 | INFO     | vgg6 | PLOT GENERATION START | output_dir=/content/CS25M539_Assignment1/assessment_results/baseline/plots run_count=1
+2026-10-30 17:40:29 | INFO     | vgg6 | PLOT RUN START | run=baseline_custom index=1/1
+2026-10-30 17:40:30 | INFO     | vgg6 | PLOT RUN COMPLETE | run=baseline_custom files=5
+2026-10-30 17:40:30 | INFO     | vgg6 | PLOT GENERATION COMPLETE | directory=/content/CS25M539_Assignment1/assessment_results/baseline/plots
+2026-10-30 17:40:30 | INFO     | vgg6 | PLOT STAGE COMPLETE | directory=/content/CS25M539_Assignment1/assessment_results/baseline/plots
+2026-10-30 17:40:30 | INFO     | vgg6 | FINAL SUMMARY | selected by best validation accuracy:
+            run    group activation optimizer  batch_size  learning_rate  epochs  seed  best_epoch  best_val_accuracy  test_loss  test_accuracy  minutes                                                                                checkpoint
+baseline_custom baseline       relu      adam          64           0.01      20    42          16              81.38   0.600708          80.68 6.304685 /content/CS25M539_Assignment1/assessment_results/baseline/checkpoints/baseline_custom.pth
+2026-10-30 17:40:30 | INFO     | vgg6 | OUTPUTS | directory=/content/CS25M539_Assignment1/assessment_results/baseline
+2026-10-30 17:40:30 | INFO     | vgg6 | PROJECT COMPLETE | group=baseline runs=1

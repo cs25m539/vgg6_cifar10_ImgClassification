@@ -1,0 +1,99 @@
+2026-10-30 20:04:08 | INFO     | vgg6 | REPORT CLI ARGUMENTS | {'history_csv': '/content/CS25M539_Assignment1/assessment_results/all/epoch_history.csv', 'summary_csv': '/content/CS25M539_Assignment1/assessment_results/all/experiment_summary.csv', 'output_dir': '/content/CS25M539_Assignment1/assessment_results/wandb_reports', 'wandb_project': 'vgg6-cifar10', 'wandb_entity': None, 'local_only': False, 'wandb_only': False}
+2026-10-30 20:04:08 | INFO     | vgg6.csv_reporting | ==============================================================================
+2026-10-30 20:04:08 | INFO     | vgg6.csv_reporting | CSV REPORTING START | training_enabled=false
+2026-10-30 20:04:08 | INFO     | vgg6.csv_reporting | CSV LOAD START | history=/content/CS25M539_Assignment1/assessment_results/all/epoch_history.csv summary=/content/CS25M539_Assignment1/assessment_results/all/experiment_summary.csv
+2026-10-30 20:04:08 | INFO     | vgg6.csv_reporting | CSV LOAD COMPLETE | history_rows=420 summary_rows=21 history_runs=21 summary_runs=21
+2026-10-30 20:04:09 | INFO     | vgg6.csv_reporting | LOCAL PLOT STAGE START | runs=21 output=/content/CS25M539_Assignment1/assessment_results/wandb_reports/plots
+2026-10-30 20:04:09 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=activation_gelu index=1/21
+2026-10-30 20:04:09 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=activation_gelu plots=5
+2026-10-30 20:04:09 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=activation_relu index=2/21
+2026-10-30 20:04:10 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=activation_relu plots=5
+2026-10-30 20:04:10 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=activation_sigmoid index=3/21
+2026-10-30 20:04:11 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=activation_sigmoid plots=5
+2026-10-30 20:04:11 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=activation_silu index=4/21
+2026-10-30 20:04:12 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=activation_silu plots=5
+2026-10-30 20:04:12 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=activation_tanh index=5/21
+2026-10-30 20:04:12 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=activation_tanh plots=5
+2026-10-30 20:04:12 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=baseline_relu_adam index=6/21
+2026-10-30 20:04:13 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=baseline_relu_adam plots=5
+2026-10-30 20:04:13 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=batch_size_128 index=7/21
+2026-10-30 20:04:14 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=batch_size_128 plots=5
+2026-10-30 20:04:14 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=batch_size_32 index=8/21
+2026-10-30 20:04:15 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=batch_size_32 plots=5
+2026-10-30 20:04:15 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=batch_size_64 index=9/21
+2026-10-30 20:04:16 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=batch_size_64 plots=5
+2026-10-30 20:04:16 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=epochs_10 index=10/21
+2026-10-30 20:04:16 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=epochs_10 plots=5
+2026-10-30 20:04:16 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=epochs_20 index=11/21
+2026-10-30 20:04:17 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=epochs_20 plots=5
+2026-10-30 20:04:17 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=epochs_30 index=12/21
+2026-10-30 20:04:18 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=epochs_30 plots=5
+2026-10-30 20:04:18 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=learning_rate_0.0001 index=13/21
+2026-10-30 20:04:19 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=learning_rate_0.0001 plots=5
+2026-10-30 20:04:19 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=learning_rate_0.001 index=14/21
+2026-10-30 20:04:19 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=learning_rate_0.001 plots=5
+2026-10-30 20:04:19 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=learning_rate_0.01 index=15/21
+2026-10-30 20:04:20 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=learning_rate_0.01 plots=5
+2026-10-30 20:04:20 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_adagrad index=16/21
+2026-10-30 20:04:21 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_adagrad plots=5
+2026-10-30 20:04:21 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_adam index=17/21
+2026-10-30 20:04:22 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_adam plots=5
+2026-10-30 20:04:22 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_nadam index=18/21
+2026-10-30 20:04:22 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_nadam plots=5
+2026-10-30 20:04:22 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_nesterov-sgd index=19/21
+2026-10-30 20:04:23 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_nesterov-sgd plots=5
+2026-10-30 20:04:23 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_rmsprop index=20/21
+2026-10-30 20:04:24 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_rmsprop plots=5
+2026-10-30 20:04:24 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN START | run=optimizer_sgd index=21/21
+2026-10-30 20:04:25 | INFO     | vgg6.csv_reporting | LOCAL PLOT RUN COMPLETE | run=optimizer_sgd plots=5
+2026-10-30 20:04:25 | INFO     | vgg6.csv_reporting | LOCAL PLOT STAGE COMPLETE | output=/content/CS25M539_Assignment1/assessment_results/wandb_reports/plots
+2026-10-30 20:04:25 | INFO     | vgg6.csv_reporting | WANDB LOGIN START
+2026-10-30 20:04:26 | INFO     | vgg6.csv_reporting | WANDB LOGIN COMPLETE
+2026-10-30 20:04:26 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=activation_gelu index=1/21
+2026-10-30 20:04:30 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=activation_gelu points=20
+2026-10-30 20:04:30 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=activation_relu index=2/21
+2026-10-30 20:04:34 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=activation_relu points=20
+2026-10-30 20:04:34 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=activation_sigmoid index=3/21
+2026-10-30 20:04:40 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=activation_sigmoid points=20
+2026-10-30 20:04:40 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=activation_silu index=4/21
+2026-10-30 20:04:47 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=activation_silu points=20
+2026-10-30 20:04:47 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=activation_tanh index=5/21
+2026-10-30 20:04:50 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=activation_tanh points=20
+2026-10-30 20:04:50 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=baseline_relu_adam index=6/21
+2026-10-30 20:04:54 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=baseline_relu_adam points=20
+2026-10-30 20:04:54 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=batch_size_128 index=7/21
+2026-10-30 20:04:58 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=batch_size_128 points=20
+2026-10-30 20:04:58 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=batch_size_32 index=8/21
+2026-10-30 20:05:03 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=batch_size_32 points=20
+2026-10-30 20:05:03 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=batch_size_64 index=9/21
+2026-10-30 20:05:06 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=batch_size_64 points=20
+2026-10-30 20:05:06 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=epochs_10 index=10/21
+2026-10-30 20:05:11 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=epochs_10 points=10
+2026-10-30 20:05:11 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=epochs_20 index=11/21
+2026-10-30 20:05:15 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=epochs_20 points=20
+2026-10-30 20:05:15 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=epochs_30 index=12/21
+2026-10-30 20:05:18 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=epochs_30 points=30
+2026-10-30 20:05:18 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=learning_rate_0.0001 index=13/21
+2026-10-30 20:05:22 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=learning_rate_0.0001 points=20
+2026-10-30 20:05:22 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=learning_rate_0.001 index=14/21
+2026-10-30 20:05:26 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=learning_rate_0.001 points=20
+2026-10-30 20:05:26 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=learning_rate_0.01 index=15/21
+2026-10-30 20:05:29 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=learning_rate_0.01 points=20
+2026-10-30 20:05:29 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_adagrad index=16/21
+2026-10-30 20:05:33 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_adagrad points=20
+2026-10-30 20:05:33 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_adam index=17/21
+2026-10-30 20:05:41 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_adam points=20
+2026-10-30 20:05:41 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_nadam index=18/21
+2026-10-30 20:05:46 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_nadam points=20
+2026-10-30 20:05:46 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_nesterov-sgd index=19/21
+2026-10-30 20:05:50 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_nesterov-sgd points=20
+2026-10-30 20:05:50 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_rmsprop index=20/21
+2026-10-30 20:05:54 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_rmsprop points=20
+2026-10-30 20:05:54 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN START | run=optimizer_sgd index=21/21
+2026-10-30 20:05:58 | INFO     | vgg6.csv_reporting | WANDB CURVE RUN COMPLETE | run=optimizer_sgd points=20
+2026-10-30 20:05:58 | INFO     | vgg6.csv_reporting | WANDB SCATTER STAGE START | points=420
+2026-10-30 20:06:07 | INFO     | vgg6.csv_reporting | WANDB SCATTER STAGE COMPLETE
+2026-10-30 20:06:07 | INFO     | vgg6.csv_reporting | WANDB CONFIGURATION STAGE START | rows=21 columns=['run', 'activation', 'optimizer', 'batch_size', 'learning_rate', 'epochs', 'best_epoch', 'best_val_accuracy', 'test_accuracy', 'test_loss']
+2026-10-30 20:06:09 | INFO     | vgg6.csv_reporting | WANDB PARALLEL COORDINATES CHART CREATED | axes=['activation', 'optimizer', 'batch_size', 'learning_rate', 'epochs', 'best_epoch', 'best_val_accuracy']
+2026-10-30 20:06:14 | INFO     | vgg6.csv_reporting | WANDB CONFIGURATION STAGE COMPLETE | project=vgg6-cifar10-configurations
+2026-10-30 20:06:14 | INFO     | vgg6.csv_reporting | CSV REPORTING COMPLETE | elapsed_seconds=125.56 training_enabled=false
